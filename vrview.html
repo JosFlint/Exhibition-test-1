@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360° Image Viewer</title>
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+</head>
+<body>
+    <div id="vrview" style="width: 100%; height: 500px;"></div>
+
+    <script>
+        window.addEventListener('load', function() {
+            var vrView = new VRView.Player('#vrview', {
+                image: 'https://josflint.github.io/MAexhibitiongallery/20240916_095024_386%20-%2020240916_095024_386.jpg', // Replace with your hosted 360° image
+                width: '100%',
+                height: '500px',
+                is_stereo: false,
+                is_autopan_off: true
+            });
+        });
+    </script>
+</body>
+</html>
